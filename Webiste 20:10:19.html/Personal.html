@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <title>Design for Care: The Relationship Principle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Principlestyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+
+    </head>
+    
+<body>
+    
+<!--    Example-->
+    <div id="sectionOne" class="section sectionOne">
+        
+            <div class="header headerThree">
+                <a class="aboutButton">The Relationship Principle</a>
+            </div>
+            
+        <div class="touchMeNot"><p>Click me</p></div>
+        
+       <a href="#sectionTwo" class="hitBox hitBoxOne">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+        
+<!--    About the Principle-->
+    <div id="sectionTwo" class="section sectionTwo">
+        <div class="header headerThree">
+                <a class="aboutButton">The Relationship Principle</a>
+            </div>
+        
+        <div class="textContainer">
+                <p class="para paraTwo">
+                Everyone has objects that are sentimental to them, things that they can’t be parted with. These products harbour more emotional attachment than any other because they are associated with stories, moments and understanding. These products are extremely personal and consequently can’t intentionally be designed. The moment something becomes curated in the attempt of seeming personal it ruins the personality. </p>    
+                <p class="para paraThree">
+                The ultimate personal product is a product that ages with the user. A shoe for example, moulds to the shape of your foot over a long period of time, becoming personal. A personal product is one that ages with its user. Put simply, the longer an object stays in someone's life the greater the personal connection they develop with it.</p>
+           
+            </div>
+        
+        <a href="#sectionThree" class="hitBox hitBoxTwo">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+        
+<!--    Onzo visual-->
+    <div id="sectionThree" class="section sectionThree">
+        <div class="header headerThree">
+                <a class="aboutButton">Case Study</a>
+            </div>
+        
+        <img src="images/logos.svg" class="image"> 
+        
+                
+        
+        <a href="#sectionFour" class="hitBox hitBoxThree">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+        
+<!--    About the Onzo transformation-->
+    <div id="sectionFour" class="section sectionFour">
+        
+        <div class="header headerFour">
+            <a class="aboutButton">Case Study</a>
+        </div>
+                <div class="textContainer">
+                <p class="para paraTwo">Altering the Onzo business model to extend the duration of an experience can open the possibility of building greater emotional attachments with the bikes. A subscription service expands on the idea of what a bike share can be whilst remaining within the realms of a product-service system. With a subscription, users can start and finish the service whenever they like. </p>
+                <p class="para paraThree">
+                Repair and maintenance will be included within the service. When products meet the end of their working lives they go back to the manufacturer to be repurposed. Considering the Relationship Principle means extending the time the user spends with the product to encourage emotional attachment, kaitiakitanga and care.  
+                </p>  
+                </div>
+        
+        <div class="navContainer">
+        <ul>
+            <li><a href="index.html"><div class="home" >
+                <img src="images/Home20x20.svg" width="30px" height="30px">
+                </div>
+                </a>
+            </li>
+            <li><a href="#sectionOne"><div class="backToTop backToTopOne" ></div>
+                    <div class="backToTop backToTopTwo" ></div>
+                </a>
+            </li>
+            <li  class="next"><a href="Two-Way.html"><div class="nextPrinciple" ></div><p>The Self-Investment<br> Principle</p></a></li>
+        </ul>
+        </div>  
+                
+    </div>
+        
+    <!--Moving Background-->
+<!--
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="bg bg4"></div>
+        <div class="bg bg5"></div>
+-->
+                
+    <!--Smooth scrolling -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+        
+    <!--Touch me not-->
+<script>
+    $('.touchMeNot').on('mouseenter',function(e){
+    var maxX = $(window).width() - $(this).width();
+    var maxY = $(window).height() - $(this).height();    
+    $(this).css({
+        'left':getRandomInt(0, maxX),
+        'top':getRandomInt(0, maxY)
+    });
+});
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+        
+</script>
+    
+</body>

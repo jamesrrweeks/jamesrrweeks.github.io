@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <title>Design for Care: The Story Principle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Principlestyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+
+    </head>
+    
+<body>
+    
+    <div id="oops">
+        
+        <p>This webiste is<br>designed for more<br>intimate engagement.<strong><br>Try it on a laptop<br> or desktop</strong></p>
+        
+        </div>
+    
+<!--    Example-->
+    <div id="sectionOne" class="section sectionOne videoSection">
+        
+            <div class="navBarTop">
+            <a href="index.html"><img src="images/Home20x20.svg" width="20px" height="20px;"></a>
+            <a href="Visceral.html">First Impression</a>
+            <a href="Behavioural.html" >Fun-ctionality</a>
+            <a href="Reflective.html" class="thisOne">Story</a>
+            <a href="Anthropomorphic.html" >Human</a>
+            <a href="Two-Way.html">Self-Investment</a> 
+            </div> 
+    
+        <video id="myVideo" width="100%" height="100%" onclick ="hide(); playPause(this); dissapear() " >
+        <source src="images/Story%20Principle%20Render%205.mp4" type="video/mp4"/>
+        </video>
+        
+        <a id="clickme" class="div-hide" href="#sectionTwo" >
+                <div class="clickme clickmeStory">
+                    <p>Click me</p>
+                </div>
+            </a>
+        
+                <div id="prompt" class="prompt" style="display: block;">
+                    <p>Click</p>
+                </div>
+        
+        <a id="clickMeDashed" onclick="dissapear(); start(); hide()" style="display: block;">
+                <div >
+                </div>
+            </a>
+        
+        
+        <a id="clickme" class="div-hide" href="#sectionTwo" >
+                <div class="clickme clickmeStory">
+                    <p>Click me</p>
+                </div>
+            </a>
+        
+        <a id="hitBoxAnim" href="#sectionTwo" class="hitBox hitBoxOne">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+        
+<!--    About the Principle-->
+    <div id="sectionTwo" class="section sectionTwo">
+        <div class="header headerThree">
+                <a class="aboutButton">The Story Principle</a>
+            </div>
+        
+        <div class="textContainer">
+                <p class="para paraTwo">
+                    The interaction illustrates the importance of creating a story to develop a relationship between customers and the brand.  </p>
+                    
+                    <p class="para paraThree">
+                    Stories affect how your users feel when they use your product. The stories you tell say something about those who use your product. This also has an influence over their actions and behaviours. Like a teddy bear, objects that we develop strong emotional attachments with represent more than just the sum of their parts. It’s the way these parts are designed to work together that create the stories.  </p>
+           
+            </div>
+        
+        <a href="#sectionThree" class="hitBox hitBoxTwo">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+        
+<!--    Onzo visual-->
+    <div id="sectionThree" class="section sectionThree">
+        <div class="header headerThree">
+                <a class="aboutButton">What does this principle look like?</a>
+            </div>
+        
+        <img src="images/Teddys/reflectiveBear.svg" class="image"> 
+        
+                
+        
+        <a href="#sectionFour" class="hitBox hitBoxThree">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+    
+<!--    About the Onzo transformation-->
+    <div id="sectionFour" class="section sectionFour">
+        
+        <div class="header headerFour">
+            <a class="aboutButton">Case Study</a>
+        </div>
+                <div class="textContainer">
+                <p class="para paraTwo">The bike is a symbol of freedom and environmental action. Advertisements could be a vessel to showcase a story.
+                 </p>
+                
+        
+                <p class="para paraThree">Onzo currently advertises how cheap they are “only a dollar per hour”. But the bike is a symbol of freedom and environmental action. The brand and all of its collateral outputs need to reflect the core message of freedom and environmental action. This could be done through advertising, branding or even hosting cycle events. </p>
+                </div>
+    
+
+        
+        <div class="navContainer">
+        <ul>
+            <li><a href="index.html"><div class="home" >
+                <img src="images/Home20x20.svg" width="30px" height="30px">
+                </div>
+                </a>
+            </li>
+            <li><a href="#sectionOne"><div class="backToTop backToTopOne" ></div>
+                    <div class="backToTop backToTopTwo" ></div>
+                </a>
+            </li>
+            <li  class="next"><a href="Anthropomorphic.html"><div class="nextPrinciple" ></div><p>The Human<br> Principle</p></a></li>
+        </ul>
+        </div>  
+                
+    </div>
+        
+    <!--Moving Background-->
+<!--
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="bg bg4"></div>
+        <div class="bg bg5"></div>
+-->
+                
+    <!--Smooth scrolling -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+     
+    <!--Video autoplay    -->
+<script>
+    
+    function playPause(video) {
+    if (video.paused) {
+        video.play();
+    } else {
+        video.pause();
+    }
+}
+</script>
+    
+    <script>
+    
+       function start() {
+           var x = document.getElementById('myVideo');
+    if (x.paused) {
+        x.play();
+    } else {
+        x.pause();
+    }
+} 
+    
+    </script>
+    
+    <!--Show Button after video-->
+<script type='text/javascript'>
+    document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+    
+    function myHandler(e) {
+        var x = document.getElementById("clickme");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+            x.style.display = "block";
+    }
+}
+</script>
+
+<!--    Hide prompt-->
+<script>
+    function hide() {
+    var x = document.getElementById("prompt");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+        </script>
+    
+<!--    Hide button-->
+<script>
+    function dissapear() {
+    var x = document.getElementById("clickMeDashed");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+        </script>
+    
+<!--    Reveal down arrow after video-->
+<script type='text/javascript'>
+    document.getElementById('myVideo').addEventListener('ended',myHandler,false);
+    
+    function myHandler(e) {
+        var x = document.getElementById("hitBoxAnim");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+            x.style.display = "block";
+    }
+}
+</script>
+</body>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Design for Care</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="landing.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        
+        <div id="oops">
+        
+        <p>This webiste is<br>designed for more<br>intimate engagement.<strong><br>Try it on a laptop<br> or desktop</strong></p>
+        
+        </div>
+    
+        <div id="sectionOne" class="section home">
+            
+            <div class="header">
+            
+            <a href="#sectionTwo" class="aboutButton">About</a>
+            <a href="#sectionThree" class="mission">Mission</a>
+            <a href="#sectionFour" class="caseStudy">Case Study</a>
+            <a href="#sectionFive" class="principlesButton">Principles</a>
+                
+            </div>
+            
+            <div class="titleWrapper">
+            <div class='Design'>
+            <h1>Design</h1>
+            </div>
+            <div class="scrollBox">
+                <div class="scrollItem"><a> for care</a></div>
+                <div class="scrollItem"><a> for longevity</a></div>
+                <div class="scrollItem"><a> emotional attachments</a></div>
+                <div class="scrollItem"><a> Kaitiakitanga</a></div>  
+                <div class="scrollItem"><a> circular</a></div>
+                <div class="scrollItem"><a> behaviours</a></div>
+                <div class="scrollItem"><a> for the future</a></div>
+                <div class="scrollItem"><a> for sustainability</a></div>  
+                <div class="scrollItem"><a> guardianship</a></div>  
+                <div class="scrollItem"><a> for care</a></div>  
+            </div>
+            </div>
+            
+            <a href="#sectionTwo" class="hitBox hitBoxOne">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+            
+        </div>
+        
+        <div id="sectionTwo" class="section about">
+            
+            <div class="header headerTwo">
+                <a class="aboutButton">About</a>
+            </div>
+            
+            <div class="textContainer">
+            <p class="para paraTwo">A future that is no longer interested in ownership but more focused on sharing could be closer than we think. We, the users and the designers, have to be ready for this shift. </p>
+
+            <p class="para paraThree">Today it is widely recognised that our planet can no longer sustain the mass of materials wasted by our Linear Economy.
+            New efforts toward reusing and redistributing valuable resources are resulting in a shift toward a new <strong>Circular Economy.</strong> Innovative companies are advancing the idea of a product and supplying them in the form of services. 
+            The concept of sharing is not new, but technology is enhancing our ability and capacity to share.  </p>
+            </div>
+            
+            <a href="#sectionThree" class="hitBox hitBoxTwo">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+            
+            
+        </div>
+        
+        <div id="sectionThree" class="section quote">
+            
+            <h1>How do we develop emotional attachment with objects in the shared economy to give them the care they deserve? How can we <strong>design product-service systems</strong> in a way that encourages <strong>good user behaviours?</strong> </h1>
+            
+            <a href="#sectionFour" class="hitBox hitBoxThree">
+            <div class="center"><div class="arrow"></div></div>
+            </a>
+            
+            
+        </div>
+        
+        <div id="sectionFour" class="section Onzo">
+            
+            <div class="header headerThree">
+                <a class="aboutButton">Case Study: Onzo Bikes</a>
+            </div>
+            
+            <div class="textContainer">
+            <p class="para paraTwo"><a href="https://onzo.co.nz/">Onzo</a> is a New Zealand bike-share company that has been operating since late 2017. </p>
+
+            <p class="para paraThree">Using dockless bikes allows Onzo users to leave their bike at the destination after they have been ridden. Because of the untethered nature of the bikes they tend to be treated poorly and end up in weird places. <a href="https://www.facebook.com/OnzOsInWeirdPlaces/">There's even a Facebook group dedicated to Onzo's in weird places.</a>
+            Onzo bikes is a good case study to explain how the following design principles could be implemented because its a simple product-service-system to get your head around. This website isn’t about building stronger products; it is about creating an ethos around products to promote good user behaviours.
+ </p>
+            </div>
+            
+            <a href="#sectionFive" class="hitBox hitBoxFour">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+            
+            
+        </div>
+        
+        <div id="sectionFive" class="section principles">
+            
+            <div class="header headerFive">
+                <a class="aboutButton">Principles</a>
+            </div>
+            
+            <div class="list">
+               
+                <a href="Visceral.html" class="principleOne">
+                                First Impression</a><br>
+                <a href="Behavioural.html">Fun-ctionality</a><br>
+                <a href="Reflective.html">Story</a><br>
+                <a href="Anthropomorphic.html" onmouseover="smiley()" onmouseout="smiley()">Human</a><br>
+                <a href="Two-Way.html">Self-Investment</a><br>
+            
+            </div>
+           
+            <div id="smiley" style="display: none;" >
+            <img class="smiley smileyOne" src="images/Happy.svg" width="200px" height="200px" >
+                <img class="smiley smileyTwo" src="images/Happy.svg" width="200px" height="200px" >
+            </div>
+            
+        </div>
+        
+<!--        Moving Background-->
+<!--
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="bg bg4"></div>
+        <div class="bg bg5"></div>
+-->
+        
+    <!--Smooth scrolling -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+        
+<!--    SMiley-->
+<script>
+    function smiley() {
+    var x = document.getElementById("smiley");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+</script>
+    
+    </body>

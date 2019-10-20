@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <title>Design for Care: The First Impression Principle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Principlestyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+
+    </head>
+    
+<body>
+    
+    <div id="oops">
+        
+        <p>This webiste is<br>designed for more<br>intimate engagement.<strong><br>Try it on a laptop<br> or desktop</strong></p>
+        
+        </div>
+    
+    <!--    Example-->    
+    <div id="sectionOne" class="section sectionOne">
+        
+<div class="navBarTop">
+            <a href="index.html"><img src="images/Home20x20.svg" width="20px" height="20px;"></a>
+            <a href="Visceral.html" class="thisOne">First Impression</a>
+            <a href="Behavioural.html" >Fun-ctionality</a>
+            <a href="Reflective.html" >Story</a>
+            <a href="Anthropomorphic.html" >Human</a>
+            <a href="Two-Way.html">Self-Investment</a> 
+            </div> 
+        
+            <a id="clickme" onclick="skitz()">
+                <div class="clickme clickmeSkitz">
+                    <p>Click me</p>
+                </div>
+            </a>
+       
+        
+        <a href="#sectionTwo" class="hitBox hitBoxOne">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+        <div id="crazyshit" class="crazyshit" onclick="skitz()">
+            <div class="senses">
+                <h1 class="sigth">Sight</h1>
+                <h1 class="smell">Smell</h1>
+                <h1 class="sound">Sound</h1>
+                <h1 class="touch">Touch</h1>
+                <h1 class="taste">Taste</h1>
+            </div>
+        </div>
+        
+    </div>
+       
+    <!--    About the Principle-->    
+    <div id="sectionTwo" class="section sectionTwo">
+        
+    
+        <div class="header headerThree">
+                <a class="aboutButton">What was that?</a>
+            </div>
+        
+        <div class="textContainer">
+                <p class="para paraTwo">
+                The interaction above visualises what happens inside our heads when our brain receives messages from the senses.  
+                </p>
+                
+                <p class="para paraThree">
+                 This principle is to remind designers to consider what messages the first impression of a product tells people. Messages are received through sight, smell, sound, touch and taste to give the impression. The first impression principle lays the foundation for further emotional attachment. A Teddy bear isn't designed to look like a real bear because it needs to send messages of comfort and trust. 
+                </p>            
+            </div>
+            
+
+        
+        <a href="#sectionThree" class="hitBox hitBoxTwo">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+       
+    <!--    Onzo visual-->    
+    <div id="sectionThree" class="section sectionThree">
+        <div class="header headerThree">
+                <a class="aboutButton">Teddy Bear</a>
+            </div>
+        
+        <img src="images/Teddys/visceralBear.svg" class="image imageVisceral"> 
+        
+        <a href="#sectionFour" class="hitBox hitBoxThree">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+       
+    <!--    About the Onzo transformation-->    
+    <div id="sectionFour" class="section sectionFour">
+        <div class="header headerFour">
+                <a class="aboutButton">Case Study</a>
+            </div>
+        
+        <div class="textContainer">
+        <p class="para paraTwo">How does Onzo want their product to be percieved?</p>    
+            
+        <p class="para paraThree">
+        Using the first impression principle, Onzo’s branding can attract a new audience. Their primary colour could be changed to green to relay an environmentally oriented message. The logo could be re-designed to accentuate its bikey-ness and bring more attention to the fact that they are a New Zealand company. 
+        </p>  
+       </div>
+       
+       <div class="navContainer">
+        <ul>
+            <li><a href="index.html"><div class="home" >
+                <img src="images/Home20x20.svg" width="30px" height="30px">
+                </div>
+                </a>
+            </li>
+            <li><a href="#sectionOne"><div class="backToTop backToTopOne" ></div>
+                    <div class="backToTop backToTopTwo" ></div>
+                </a>
+            </li>
+            <li  class="next"><a href="Behavioural.html"><div class="nextPrinciple" ></div><p>The Fun-ctionality<br> Principle</p></a></li>
+        </ul>
+        </div>    
+        
+    </div>
+        
+    <!--    Moving Background-->
+<!--
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="bg bg4"></div>
+    <div class="bg bg5"></div>
+-->
+        
+    <!--    Skitz shit-->
+<script>
+        
+function skitz() {
+    var x = document.getElementById("crazyshit");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
+    }
+}
+    
+
+    
+</script>
+        
+    <!--    Smooth scrolling -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+    
+</body>

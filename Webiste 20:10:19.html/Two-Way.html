@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+        <meta charset="utf-8">
+        <title>Design for Care: The Self-Investment Principle</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Principlestyles.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text&display=swap" rel="stylesheet">
+
+    </head>
+    
+<body>
+    
+    <div id="oops">
+        
+        <p>This webiste is<br>designed for more<br>intimate engagement.<strong><br>Try it on a laptop<br> or desktop</strong></p>
+        
+        </div>
+    
+<!--    Example-->
+    <div id="sectionOne" class="section sectionOne">
+        
+            <div class="navBarTop">
+            <a href="index.html"><img src="images/Home20x20.svg" width="20px" height="20px;"></a>
+            <a href="Visceral.html">First Impression</a>
+            <a href="Behavioural.html" >Fun-ctionality</a>
+            <a href="Reflective.html" >Story</a>
+            <a href="Anthropomorphic.html" >Human</a>
+            <a href="Two-Way.html" class="thisOne">Self-Investment</a> 
+            </div> 
+            
+        <div id="segments">
+        <div class="mover moverOne"><div id="drag7" draggable="true" ondragstart="drag(event)"></div></div>
+        <div class="mover moverTwo"><div id="drag11" draggable="true" ondragstart="drag(event)"></div></div>
+        <div class="mover moverThree"><div id="drag6" draggable="true" ondragstart="drag(event)"></div></div>
+        <div class="mover moverFour"><div id="drag12" draggable="true" ondragstart="drag(event)"></div></div>
+        </div>
+
+        <div id="landing">
+        <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        
+        <a href="#sectionTwo" class="hitBox hitBoxOne">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+        
+<!--    About the Principle-->
+    <div id="sectionTwo" class="section sectionTwo">
+        <div class="header headerThree">
+                <a class="aboutButton">The Self-Investment Principle</a>
+            </div>
+        
+        <div class="textContainer">
+                <p class="para paraTwo">
+                You spent some time and a little bit of effort to create a button. </p>
+            
+            <p class="para paraThree"><a href="https://www.hbs.edu/faculty/Pages/item.aspx?num=41121">“The IKEA effect”.</a> When humans invest time, money, or any form of effort into something they develop a connection with it. Repair and maintenance are forms of self-investment. More investment develops stronger emotional bonds. The more a child plays with their Teddy stronger their emotional attachment becomes. </p>
+           
+            </div>
+        
+        <a href="#sectionThree" class="hitBox hitBoxTwo">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+        
+<!--    Onzo visual-->
+    <div id="sectionThree" class="section sectionThree">
+        <div class="header headerThree">
+                <a class="aboutButton">What does this principle look like?</a>
+            </div>
+        
+        <img src="images/Teddys/TwoWayTed.svg" class="image"> 
+        
+                
+        
+        <a href="#sectionFour" class="hitBox hitBoxThree">
+            <div class="center"><div class="arrow"></div></div>
+        </a>
+        
+    </div>
+        
+<!--    About the Onzo transformation-->
+    <div id="sectionFour" class="section sectionFour">
+        
+        <div class="header headerFour">
+            <a class="aboutButton">Case Study</a>
+        </div>
+                <div class="textContainer">
+                <p class="para paraTwo">Encouraging users to repair punctures and replace tyres are simple additions Onzo can implement to give the users the opportunity to invest in the product.
+                </p> 
+                    
+                <p class="para paraThree">A maintenance repair kit will show Onzo users how to repair flat tires and fix punctures. 
+                This will grow more intimacy with the bikes, knowing their ins and outs, and actually how to care for them. Being able to understand bike jargon and having an awareness of what each part does will help users engage with their local biking community. 
+                </p>
+                </div>
+        
+        <div class="navContainer">
+        <ul>
+            <li><a href="index.html"><div class="home" >
+                <img src="images/Home20x20.svg" width="30px" height="30px">
+                </div>
+                </a>
+            </li>
+            <li><a href="#sectionOne"><div class="backToTop backToTopOne" ></div>
+                    <div class="backToTop backToTopTwo" ></div>
+                </a>
+            </li>
+            <li  class="next"><a href="index.html"><div class="nextPrinciple" ></div><p>Home</p></a></li>
+        </ul>
+        </div>  
+                
+    </div>
+        
+    <!--Moving Background-->
+<!--
+        <div class="bg"></div>
+        <div class="bg bg2"></div>
+        <div class="bg bg3"></div>
+        <div class="bg bg4"></div>
+        <div class="bg bg5"></div>
+-->
+                
+    <!--Smooth scrolling -->
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+        
+    <!--Drag and Drop-->
+<script>
+            
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("landing", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("landing");
+    ev.target.appendChild(document.getElementById(data));
+}            
+
+</script>  
+    
+</body>
